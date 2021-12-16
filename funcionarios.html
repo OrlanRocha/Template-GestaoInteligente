@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Funcionarios | Painel de Controle</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="imagens/logo-icone.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaQueries.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+</head>
+
+<body class="load">
+    <div class="nav-mobile">
+        <ul class="nav">
+            <li class="btn-nav p-6 m-b-4 ativo">Início</li>
+            <li class="btn-nav p-6 m-b-4">Meu Plano</li>
+            <li class="btn-nav p-6 m-b-4">Configurações de perfil</li>
+            <li class="btn-nav p-6 m-b-4">Suporte</li>
+            <li class="btn-nav p-6 m-b-4 cor-vermelho">Deslogar</li>
+        </ul>
+    </div>
+    <div class="main">
+        <header class="p-2 p-b-0 ">
+            <nav class="p-4 p-t-6">
+                <div class="btn-nav-mob">
+                    <div class="card p-1">
+                        <label class="unselect f-s-6 color-f-1">&#9776;</label>
+                    </div>
+                </div>
+                <div class="logo m-r-2">
+                    <img src="imagens/icon.png" />
+                </div>
+                <span class="btn-nav m-r-2 p-4 ativo"><a href="index.html" title="Início"> Início</a></span>
+                <span class="btn-nav m-r-2 p-4 "><a href="#" title="Contato"> Meu plano</a></span>
+                <span class="btn-nav p-4 "><a href="#" title="Início"> Suporte</a></span>
+                <span class="btn-nav p-4 m-l-2 f-right r-circle">OR</span>
+                <span class="f-right">
+					<input type="search" name="busca" class="color-bg-2 input-s-nav" id="busca" placeholder="Pesquisar..."  autocomplete="off" />
+				</span>
+            </nav>
+        </header>
+        <main class="p-2 p-b-8 m-b-8">
+            <div class="g-p grid-panel">
+                <div class="p-t-2 p-l-0 p-b-2 p-r-2 sbar-1 f-left">
+                    <div class="p-4 color-bg-1 card sidebar-min">
+                        <div class="btn btn-default m-t-1 p-relative  defaul-color-bg-2">
+                            <a href="dashboard.html" title="Dashboard">
+                                <span class="icon-menu"> 
+                                    <i class="fas fa-chart-line"></i>
+									<span class="tooltiptext">
+										Dashboard									
+									</span>
+                                </span>
+                                <p class="txt-menu">Dashboard</p>
+                            </a>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2 ativo">
+                            <a href="funcionarios.html" title="Funcionários">
+                                <span class="icon-menu"><i class="fas fa-users"></i>
+									<span class="tooltiptext">
+										Funcionários
+									</span>
+                                </span>
+                                <p class="txt-menu">Funcionários</p>
+                            </a>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <span class="icon-menu"><i class="fas fa-cogs"></i>
+								<span class="tooltiptext">
+									Configurações
+								</span>
+                            </span>
+                            <p class="txt-menu">Configurações</p>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <span class="icon-menu"><i class="fas fa-shield-alt"></i>
+								<span class="tooltiptext">
+									Segurança
+								</span>
+                            </span>
+                            <p class="txt-menu">Segurança</p>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <span class="icon-menu"><i class="fas fa-user-friends"></i>
+								<span class="tooltiptext">
+									Clientes
+								</span>
+                            </span>
+                            <p class="txt-menu">Clientes</p>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <span class="icon-menu"><i class="fas fa-dolly"></i>
+								<span class="tooltiptext">
+									Pedidos
+								</span>
+                            </span>
+                            <p class="txt-menu">Pedidos</p>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <span class="icon-menu"><i class="fas fa-comment-alt"></i>
+								<span class="tooltiptext">
+									Mensagens
+								</span>
+                            </span>
+                            <p class="txt-menu">Mensagens</p>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <span class="icon-menu"><i class="fas fa-clipboard-list"></i>
+								<span class="tooltiptext">
+									Relatórios
+								</span>
+                            </span>
+                            <p class="txt-menu">Relatórios</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-t-2 p-l-0 p-b-2 p-r-0 sbar-2 f-right">
+                    <div class="p-3 color-bg-1 card">
+                        <div class="grid-sidebar">
+                            <div class="p-2">
+                                <div class="card  p-2 bar_ defaul-color-bg-1" style="text-align: center;">
+                                    <label class="unselect">&#9776;</label>
+                                </div>
+
+                            </div>
+                            <div class="p-2">
+                                <div class="card p-4 color-f-1 defaul-color-bg-1">
+                                    <p>Sistema / Funcionários
+                                        <sub class="f-right f-600 f-s-3 ">
+											Hora atual: 
+											<span class=" color-f-1 p-r-4" id="hora"></span>
+										</sub>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-8-2">
+                            <div class="p-1">
+                                <div class="card-s" style="overflow: auto;">
+                                    <style></style>
+                                    <table>
+                                        <tr>
+                                            <th>Nome</th>
+                                            <th>Cargo</th>
+                                            <th style="width: 40px">Ativo</th>
+                                            <th class="txt-center" style="width: 100px">Editar</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Alfredo Gusmões</td>
+                                            <td>Atentende</td>
+                                            <td>Sim</td>
+                                            <td class="grid-table">
+                                                <div class="p-1">
+                                                    <div class="cor-amarelo p-2 b-radius-2 cursor alterar-1">
+                                                        <i class="fas fa-user-edit"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="p-1">
+                                                    <div class="cor-vermelho p-2 b-radius-2 cursor">
+                                                        <i class="fas fa-user-minus"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Maria Lucia da Silva</td>
+                                            <td>Operador de Caixa</td>
+                                            <td>Sim</td>
+                                            <td class="grid-table">
+                                                <div class="p-1">
+                                                    <div class="cor-amarelo p-2 b-radius-2 cursor alterar-1">
+                                                        <i class="fas fa-user-edit"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="p-1">
+                                                    <div class="cor-vermelho p-2 b-radius-2 cursor">
+                                                        <i class="fas fa-user-minus"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marcio Pedro Costa</td>
+                                            <td>Atentende</td>
+                                            <td>Sim</td>
+                                            <td class="grid-table">
+                                                <div class="p-1">
+                                                    <div class="cor-amarelo p-2 b-radius-2 cursor alterar-1">
+                                                        <i class="fas fa-user-edit"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="p-1">
+                                                    <div class="cor-vermelho p-2 b-radius-2 cursor">
+                                                        <i class="fas fa-user-minus"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>João Pedro da Silva</td>
+                                            <td>Serviços Gerais</td>
+                                            <td>Sim</td>
+                                            <td class="grid-table">
+                                                <div class="p-1">
+                                                    <div class="cor-amarelo p-2 b-radius-2 cursor alterar-1">
+                                                        <i class="fas fa-user-edit"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="p-1">
+                                                    <div class="cor-vermelho p-2 b-radius-2 cursor">
+                                                        <i class="fas fa-user-minus"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Marivania Souza</td>
+                                            <td>Supervisor</td>
+                                            <td>Sim</td>
+                                            <td class="grid-table">
+                                                <div class="p-1">
+                                                    <div class="cor-amarelo p-2 b-radius-2 cursor alterar-1">
+                                                        <i class="fas fa-user-edit"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="p-1">
+                                                    <div class="cor-vermelho p-2 b-radius-2 cursor">
+                                                        <i class="fas fa-user-minus"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Catia da Silva</td>
+                                            <td>Operador de Caixa</td>
+                                            <td>Não</td>
+                                            <td class="grid-table">
+                                                <div class="p-1">
+                                                    <div class="cor-amarelo p-2 b-radius-2 cursor alterar-1">
+                                                        <i class="fas fa-user-edit"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="p-1">
+                                                    <div class="cor-vermelho p-2 b-radius-2 cursor">
+                                                        <i class="fas fa-user-minus"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Kleber Meneses</td>
+                                            <td>Serviços Gerais</td>
+                                            <td>Sim</td>
+                                            <td class="grid-table">
+                                                <div class="p-1">
+                                                    <div class="cor-amarelo p-2 b-radius-2 cursor alterar-1">
+                                                        <i class="fas fa-user-edit"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="p-1">
+                                                    <div class="cor-vermelho p-2 b-radius-2 cursor">
+                                                        <i class="fas fa-user-minus"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Carlos Eduardo Gois</td>
+                                            <td>Motoboy</td>
+                                            <td>Sim</td>
+                                            <td class="grid-table">
+                                                <div class="p-1">
+                                                    <div class="cor-amarelo p-2 b-radius-2 cursor alterar-1">
+                                                        <i class="fas fa-user-edit"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="p-1">
+                                                    <div class="cor-vermelho p-2 b-radius-2 cursor">
+                                                        <i class="fas fa-user-minus"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <div class="card-s card-status p-5 defaul-color-bg-2 p-b-8">
+                                    <br/><br/><br/><br/><br/><br/>
+                                    <br/><br/><br/><br/><br/><br/>
+                                    <br/><br/><br/><br/><br/><br/>
+                                    <br/><br/><br/><br/><br/><br/>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="btn color-bg-3 p-1 btn-top">
+                            <span class="" style="font-size: 1.6em; color: white;">&#8593;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <span class="load-fullsreen">
+			<div class="ani-load p-2">
+				<div class="p-2 m-b-4" style="max-width: 220px;display: inline-block;">
+					<img src="imagens/icon.png" alt="Gestão Inteligente" />
+				</div>
+				<div class="p-2" style="max-width: 100px;display: inline-block;">
+					<div class="load-ani"></div>
+				</div>			
+			</div>
+		</span>
+        <style>
+            .modal {
+                text-align: center;
+                z-index: 4;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: none;
+                overflow: auto;
+                transition: all .6s;
+            }
+            
+            .modal-body {
+                position: relative;
+                margin-top: 11%;
+                width: 100%;
+                max-width: 320px;
+                background-color: rgb(0, 156, 109);
+                border-radius: .6rem;
+                padding: 1px;
+            }
+            
+            .modal-sub {
+                border-radius: 1.6rem;
+                background-color: rgb(255, 255, 255);
+            }
+        </style>
+        <div class="modal alt-1">
+            <div class="modal-body">
+                <div class="modal-sub p-8">
+
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/all.min.js"></script>
+        <!-- <span class="m-b-8 m-t-8 p-relative p-8"></span> -->
+        <footer class="p-2">
+            <nav class="p-6 txt-center">
+                <div class="" style="max-width: 80px;">
+                    <img src="imagens/icon.png" alt="Gestão Inteligente" />
+                </div>
+                <p class="color-f-1">© Copyright 2021</p>
+                <span class="color-f-1 f-s-2 w-100">Painel de Controle by <i>Luis Orlan</i></span>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>

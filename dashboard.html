@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Painel de Controle</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="imagens/logo-icone.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaQueries.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+</head>
+<body class="load">
+    
+        <main class="p-2 p-b-8 m-b-8">
+            <div class="g-p grid-panel">
+                <div class="p-t-2 p-l-0 p-b-2 p-r-2 sbar-1 f-left">
+                    <div class="p-4 color-bg-1 card sidebar-min">
+                        <div class="btn btn-default m-t-1 p-relative  defaul-color-bg-2 ativo">
+                            <a href="" title="Dashboard">
+                                <span class="icon-menu"> 
+                                    <i class="fas fa-chart-line"></i>
+									<span class="tooltiptext">
+										Dashboard									
+									</span>
+                                </span>
+                                <p class="txt-menu">Dashboard</p>
+                            </a>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <a href="funcionarios.html" title="Funcionários">
+                                <span class="icon-menu"><i class="fas fa-users"></i>
+									<span class="tooltiptext">
+										Funcionários
+									</span>
+                                </span>
+                                <p class="txt-menu">Funcionários</p>
+                            </a>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <span class="icon-menu"><i class="fas fa-cogs"></i>
+								<span class="tooltiptext">
+									Configurações
+								</span>
+                            </span>
+                            <p class="txt-menu">Configurações</p>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <span class="icon-menu"><i class="fas fa-shield-alt"></i>
+								<span class="tooltiptext">
+									Segurança
+								</span>
+                            </span>
+                            <p class="txt-menu">Segurança</p>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <span class="icon-menu"><i class="fas fa-user-friends"></i>
+								<span class="tooltiptext">
+									Clientes
+								</span>
+                            </span>
+                            <p class="txt-menu">Clientes</p>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <span class="icon-menu"><i class="fas fa-dolly"></i>
+								<span class="tooltiptext">
+									Pedidos
+								</span>
+                            </span>
+                            <p class="txt-menu">Pedidos</p>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <span class="icon-menu"><i class="fas fa-comment-alt"></i>
+								<span class="tooltiptext">
+									Mensagens
+								</span>
+                            </span>
+                            <p class="txt-menu">Mensagens</p>
+                        </div>
+                        <div class="btn btn-default m-t-1 p-relative defaul-color-bg-2">
+                            <span class="icon-menu"><i class="fas fa-clipboard-list"></i>
+								<span class="tooltiptext">
+									Relatórios
+								</span>
+                            </span>
+                            <p class="txt-menu">Relatórios</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-t-2 p-l-0 p-b-2 p-r-0 sbar-2 f-right">
+                    <div class="p-3 color-bg-1 card">
+                        <div class="grid-sidebar">
+                            <div class="p-2">
+                                <div class="card  p-2 bar_ defaul-color-bg-1" style="text-align: center;">
+                                    <label class="unselect">&#9776;</label>
+                                </div>
+
+                            </div>
+                            <div class="p-2">
+                                <div class="card p-4 color-f-1 defaul-color-bg-1">
+                                    <p>Sistema / Dashboard
+                                        <sub class="f-right f-600 f-s-3 ">
+											Hora atual: 
+											<span class=" color-f-1 p-r-4" id="hora"></span>
+										</sub>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid-5">
+                            <div class="p-1">
+                                <div class="card-s card-status cor-azul">
+                                    <h4 class="f-s-3 color-ft-1">Cliente cadastrados </h4>
+                                    <i class="fas fa-user-friends f-left f-s-5"></i>
+                                    <h1 class="f-s-6">425</h1>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <div class="card-s card-status cor-vermelho">
+                                    <h4 class="f-s-3 color-ft-1">Balanço Mensal</h4>
+                                    <i class="fas fa-dollar-sign f-left f-s-5"></i>
+                                    <h1 class="f-s-6">2.533,01</h1>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <div class="card-s card-status cor-verde">
+                                    <h4 class="f-s-3 color-ft-1">Mensagens</h4>
+                                    <i class="fas fa-comment-alt f-left f-s-5"></i>
+                                    <h1 class="f-s-6">1005</h1>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <div class="card-s card-status cor-amarelo">
+                                    <h4 class="f-s-3 color-ft-1">Mensagens nao lidas</h4>
+                                    <i class="fas fa-comment-alt f-left f-s-5"></i>
+                                    <h1 class="f-s-6">23</h1>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <div class="card-s card-status cor-laranja">
+                                    <h4 class="f-s-3 color-ft-1">Clientes Online</h4>
+                                    <i class="fas fa-user-friends f-left f-s-5"></i>
+                                    <h1 class="f-s-6">63</h1>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <div class="card-s card-status cor-amarelo">
+                                    <h4 class="f-s-3 color-ft-1">Vendas Hoje</h4>
+                                    <i class="fas fa-dollar-sign f-left f-s-5"></i>
+                                    <h1 class="f-s-6">98</h1>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <div class="card-s card-status cor-verde">
+                                    <h4 class="f-s-3 color-ft-1">Motoboys</h4>
+                                    <i class="fas fa-motorcycle f-left f-s-5"></i>
+                                    <h1 class="f-s-6">16</h1>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <div class="card-s card-status cor-laranja">
+                                    <h4 class="f-s-3 color-ft-1">Pedidos pendentes</h4>
+                                    <i class="fas fa-dolly f-left f-s-5"></i>
+                                    <h1 class="f-s-6">1</h1>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <div class="card-s card-status  cor-azul">
+                                    <h4 class="f-s-3 color-ft-1">Pedidos em andamento</h4>
+                                    <i class="fas fa-dolly f-left f-s-5"></i>
+                                    <h1 class="f-s-6">3</h1>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <div class="card-s card-status  cor-vermelho">
+                                    <h4 class="f-s-3 color-ft-1">Pedidos concluidos</h4>
+                                    <i class="fas fa-dolly f-left f-s-5"></i>
+                                    <h1 class="f-s-6">12</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-6-2-2">
+                            <div class="p-1">
+                                <div class="card-s card-status p-5 defaul-color-bg-2">
+                                    <br/><br/><br/><br/><br/><br/><br/>
+                                    <br/><br/><br/><br/><br/><br/><br/>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <div class="card-s card-status p-5 defaul-color-bg-2 p-b-8">
+                                    <br/><br/><br/><br/><br/><br/><br/>
+                                    <br/><br/><br/><br/><br/><br/><br/>
+                                </div>
+                            </div>
+                            <div class="p-1">
+                                <div class="card-s card-status p-5 defaul-color-bg-2 p-b-8">
+                                    <br/><br/><br/><br/><br/><br/><br/>
+                                    <br/><br/><br/><br/><br/><br/><br/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn color-bg-3 p-1 btn-top">
+                            <span class="" style="font-size: 1.6em; color: white;">&#8593;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <span class="load-fullsreen">
+			<div class="ani-load p-2">
+				<div class="p-2 m-b-4" style="max-width: 220px;display: inline-block;">
+					<img src="imagens/icon.png" alt="Gestão Inteligente" />
+				</div>
+				<div class="p-2" style="max-width: 100px;display: inline-block;">
+					<div class="load-ani"></div>
+				</div>			
+			</div>
+		</span>
+        <script src="js/script.js"></script>
+        <script src="js/all.min.js"></script>
+        <!-- <span class="m-b-8 m-t-8 p-relative p-8"></span> -->
+        <footer class="p-2">
+            <nav class="p-6 txt-center">
+                <div class="" style="max-width: 80px;">
+                    <img src="imagens/icon.png" alt="Gestão Inteligente" />
+                </div>
+                <p class="color-f-1">© Copyright 2021</p>
+                <span class="color-f-1 f-s-2 w-100">Painel de Controle by <i>Luis Orlan</i></span>
+            </nav>
+        </footer>
+    </div>
+</body>
+
+</html>

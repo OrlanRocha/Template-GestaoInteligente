@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Cadastro</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="imagens/logo-icone.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaQueries.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+</head>
+
+<body class="load">
+    <div class="msg-box" style="display: none;">
+        <span class="msg-alert " id="resposta"></span>
+    </div>
+    <style>
+                            
+        .cadastro-color{
+            color: rgba(16, 100, 79, 0.9);
+        }
+        .btn-escolha{
+            padding: 1rem;  
+            border: .1rem; 
+            border-style: solid;
+            border-color: rgba(16, 100, 79, 0.6);  
+            user-select: none;
+            cursor: pointer;    
+            color: rgba(16, 100, 79, 0.8);       
+            transition: all .6s;                     
+        }
+        .btn-escolha:hover{
+            opacity: .4;
+            background-color: rgba(16, 100, 79, 0.8) ;   
+            color: rgb(255, 255, 255) ;
+        }
+        .esc-cpf{
+            border-radius: 1rem 0 0 1rem;
+        }
+        .esc-cnpj{
+            border-radius: 0 1rem 1rem 0;
+        }
+        .color-cd-1{
+            color: rgba(16, 100, 79, 0.8); 
+        }
+        .color-cd-2{
+            color: rgba(50, 50, 50, 0.9); 
+        }
+        .escolha{
+            background-color: rgba(16, 100, 79, 0.8) !important;   
+            color: rgb(255, 255, 255)  !important;
+        }
+
+        .obs-att{
+            border: .1rem;
+            border-style: solid;
+            border-color: rgba(16, 100, 79, 0.8) !important; 
+            border-radius: 1rem; 
+            padding: 1rem;
+        }
+</style>
+    <span class="load-fullsreen">
+        <div class="ani-load p-2">
+            <div class="p-2 m-b-4" style="max-width: 220px;display: inline-block;">
+                <img src="imagens/icon.png" alt="Gestão Inteligente" />
+            </div>
+            <div class="p-2" style="max-width: 100px;display: inline-block;">
+                <div class="load-ani"></div>
+            </div>			
+        </div>
+    </span>
+    <main class=" main-login">
+        <div class="login-box">
+            <div class="grid-5-5 login-box-bs shadow bg-branco">
+                
+                <div class="p-8">
+                    <div class="p-l-8 p-r-8" style="overflow: hidden;transition: all;">
+                        <div class="txt-center ">
+                            <div class="p-t-8">
+                                <h4 class="f-s-6 cadastro-color">Como sera cadastrada <br/> sua empresa?</h4>
+                            </div>
+                        </div>
+                        <div class="txt-center p-t-6 p-b-8">
+                            <p class="b-line color-cd-1 f-s-4">ou</p>
+                            <div class="grid-2">
+                                    <div class="btn-escolha m-t-4 esc-cpf escolha">
+                                        CPF
+                                    </div>
+                                    <div class="btn-escolha m-t-4 esc-cnpj">
+                                        CNPJ
+                                    </div>
+                            </div>
+                        </div>
+                        <form class="form-cadastro-cpf" style="display: inline;">
+                            <div class="p-relative">
+                                <div class="obs-att">
+                                    <p class="color-cd-2">Não se preocupe, não utilizamos para consulta ou coisa do tipo, será apenas para identificação e pagamento.</p>
+                                </div>
+                                <label for="cpf" class="login-label input-label"><i class="fas fa-id-card input-ico-login"></i></label>
+                                <input type="text" id="cpf" name="cpf" class="login-input" Placeholder="Seu CPF somente números" required/>
+                            </div>
+                            <div class="p-relative">
+                                
+                                <label for="data-nascimento" class="login-label input-label"><i class="fas fa-calendar-alt input-ico-login"></i></label>
+                                <sub style="color: rgba(0, 0, 0, .8);">Data de nascimento</sub>
+                                <input type="date" id="data-nascimento" name="data-nascimento" class="login-input" required/>
+                            </div>
+                            <div class="p-relative">
+                                <label for="nome-empresa" class="login-label input-label"><i class="fas fa-building input-ico-login"></i></label>
+                                <input type="text" id="nome-empresa" name="nome-empresa" class="login-input" Placeholder="Nome da empresa" required/>
+                            </div>
+                            <div class="p-8">
+                                <button type="button" class="btn btn-cadastro-cpf">Continuar</button>
+                            </div>
+                        </form>
+                        <form class="form-cadastro-cnpj" style="display: none;">
+                            <div class="p-relative">
+                                <label for="cnpj" class="login-label input-label"><i class="fas fa-id-card input-ico-login"></i></label>
+                                <input type="text" id="cnpj" name="cnpj" class="login-input" Placeholder="CNPJ somente números" required/>
+                            </div>
+                            <div class="p-relative">
+                                <label for="ie" class="login-label input-label"><i class="fas fa-file-alt input-ico-login"></i></label>
+                                <input type="text" id="ie" name="ie" class="login-input" Placeholder="Inscrição estadual" required/>
+                                <label for="isento" class="p-l-8 p-relative" style="top: .4rem;"><input type="checkbox" name="isento" id="isento"> Insento</label>
+                            </div>
+                            <div class="p-relative">
+                                <label for="nome-empresa" class="login-label input-label"><i class="fas fa-building input-ico-login"></i></label>
+                                <input type="text" id="nome-empresa" name="nome-empresa" class="login-input" Placeholder="Nome da empresa" required/>
+                            </div>
+                            <div class="p-8">
+                                <button type="button" class="btn btn-cadastro-cnpj">Continuar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="bg-cadastro-right"></div>
+            </div>
+        </div>
+    </main> 
+    <script>
+      
+    </script>   
+    <script src="js/script-cadastro.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+
+</html>
