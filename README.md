@@ -38,7 +38,7 @@ O template foi criado para oferecer uma estrutura leve e flexível, com animaç�
 
 1. Clone este repositório ou baixe o arquivo `.zip`.
    ```bash
-   git clone https://github.com/seu-usuario/Template-GestaoInteligente.git
+   git clone https://github.com/OrlanRocha/Template-GestaoInteligente.git
    ```
    
 2. Extraia o arquivo `.zip` (se aplicável).
